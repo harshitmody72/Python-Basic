@@ -1,0 +1,37 @@
+Python
+Properties
+* Python Interpeter esecuates code line by line
+
+
+
+Basic Program of Hello World
+>>>print('Hello World ')
+Hello World
+   Or
+>>>print("Hello World")
+Hello World
+NO effect of single or duoble quotes
+
+>>> print('*' * 5)
+*****
+
+VARIABLE'S ---
+                Variable's are use to store temporary Data in the Computer Memory
+                
+P = 1           (P is a integer type Variable)
+
+p = 3.2         (p is floating point variable)   
+p= 3.0          (p is floating point varible)
+
+p = 'string'     (p is a string type)
+
+p = True / False (p is boolean Type)
+
+input() --
+           Returns a string and use to take a input from the user
+           tr  =  input('Promt')
+           tr is string type variable
+           
+If we want to convert the tr variable into integer or floating type variable 
+tr = int(tr)    for interger
+tr  = float(tr) for floating point
