@@ -1,0 +1,185 @@
+Strings
+We can define strings using single (‘ ‘) or double (“ “) quotes.
+
+To define a multi-line string, we surround our string with tripe quotes ("'  "').
+
+String Concatenation
+When the + operator is applied to string , it mean's Concatenation.
+It add two string's without space 
+It not add string's to integer's .
+
+>>>a  = 'Hi'
+>>>b = a + ',  ' +  'How are you'
+>>>print(b)
+Hi, How are you
+
+When a string contain's number , it is still a string 
+Example:
+                >>>a = "1234"
+                # a is str type datatype
+So,
+      TO convert number's in a string into a number we use  the built - in function in python
+      >>>a = "1234"
+      >>>a = int(a)
+      # a is int type datatype
+
+
+Input Function ---
+                                                 To read the data from the user we use the built - in function (input())
+input() --
+                  It alway's  return's a string
+                  When can add a prompt in it (optional )
+
+>>>a = input("prompt ")
+prompt 123
+>>>print(a)
+123
+
+Looking inside a String --
+we can grab any single character inside a string using index specified in square bracket's.
+
+The index value must be an integer and start's from zero.
+
+We can get individual characters in a string using square brackets [].
+
+
+ >>> a = "HARSHIT"
+    
+
+    H A R S H I  T
+    0  1  2  3 4  5 6      -- > Index Value
+
+>>>print(a[2]) 
+R
+
+we can pronounce a[2] like a sub 2
+
+
+course = ‘Python for Beginners’
+
+course[0]   # returns the first character
+
+course[1]   # returns the second character
+
+course[-1]  # returns the first character from the end
+
+course[-2]   # returns the second character from the end
+A Character Too Far 
+We will get a python error if we attempt to index beyond the end of a string.
+So, be careful while constructing index value's and slice's.
+
+>>>char = 'abc'
+>>>print(char[5])
+Traceback:
+IndexError : string index out of range
+
+
+String's Have Length              
+  The built-in function len gives us the length of a string.        
+
+>>>char = 'abc'  
+
+>>>print(len(char))
+3
+
+len()  Function --
+
+
+
+course = ‘Python for Beginners'
+
+We can slice a string using a similar notation:
+
+course[1:5]
+
+The above expression returns all the characters starting from the index position of 1
+to 5 (but excluding 5).
+ The result will be ytho
+If we leave out the start index, 0 will be assumed.
+If we leave out the end index, the length of the string will be assumed.
+
+We can use formatted strings to dynamically insert values into our strings:
+
+>>>name = 'Harshit'
+>>>message = f’Hi, my name is {name}’
+
+message.upper() # to convert to uppercase
+
+message.lower() # to convert to lowercase
+
+message.title() # to capitalize the first letter of every word
+
+message.find(‘p’) # returns the index of the first occurrence of p
+
+(or -1 if not found)
+
+message.replace(‘p’, ‘q’)
+
+To check if a string contains a character (or a sequence of characters), we use the in
+operator:
+
+>>> course= 'Python for Beginners'
+>>>contains= ‘Python’ in course
+>>>print(contains)
+True
+
+String Validators
+
+Python has built-in string validation methods for basic data.
+It can check if a string is composed of alphabetical characters, 
+alphanumeric characters, digits, etc.
+
+str.isalnum()
+
+This method checks if all the characters of a string are alphanumeric
+ (a-z, A-Z and 0-9) .
+
+>>> print 'ab123'.isalnum()
+True
+>>> print 'ab123#'.isalnum()
+False
+
+
+str.isalpha()
+
+This method checks if all the characters of a string are
+ alphabetical (a-z and A-Z) .
+
+>>> print 'abcD'.isalpha()
+True
+>>> print 'abcd1'.isalpha()
+False
+
+
+str.isdigit()
+
+This method checks if all the characters of a string are digits (0-9).
+
+>>> print '1234'.isdigit()
+True
+>>> print '123edsd'.isdigit()
+False
+
+
+str.islower()
+
+This method checks if all the characters of a string are 
+lowercase characters (a-z).
+
+>>> print 'abcd123#'.islower()
+True
+
+>>> print 'Abcd123#'.islower()
+False
+
+
+str.isupper()
+
+This method checks if all the characters of a string are
+uppercase characters (A-Z).
+
+>>> print 'ABCD123#'.isupper()
+True
+
+>>> print 'Abcd123#'.isupper()
+False
