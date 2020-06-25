@@ -1,37 +1,115 @@
-Python
-Properties
-* Python Interpeter esecuates code line by line
+
+Pyhton
+Python provides lots of features that are listed below.
+
+1) Easy to Learn and Use
+Python is easy to learn and use. It is developer-friendly and high level programming 
+language.
+ 
+
+2) Expressive Language
+Python language is more expressive means that it is more understandable and readable.
 
 
+3) Interpreted Language
+Python is an interpreted language i.e. interpreter executes the code line by line at a time.
+This makes debugging easy and thus suitable for beginners.
+
+
+4) Cross-platform Language
+Python can run equally on different platforms such as Windows, Linux, Unix and Macintosh 
+etc. So, we can say that Python is a portable language.
+
+
+5) Free and Open Source
+Python language is freely available at python.org .The source-code is also available. 
+Therefore it is open source.
+
+
+6) Object-Oriented Language
+Python supports object oriented language and concepts of classes and objects come
+ into existence.
+
+
+7) Extensible
+It implies that other languages such as C/C++ can be used to compile the code and
+thus it can be used further in our python code.
+
+
+8) Large Standard Library
+Python has a large and broad library and prvides rich set of module and functions
+for rapid application development.
+
+
+9) GUI Programming Support
+Graphical user interfaces can be developed using Python.
 
 Basic Program of Hello World
+
+
 >>>print('Hello World ')
 Hello World
+
    Or
+
+
 >>>print("Hello World")
 Hello World
-NO effect of single or duoble quotes
+
+
+# NO effect of single or duoble quotes
 
 >>> print('*' * 5)
 *****
 
 VARIABLE'S ---
                 Variable's are use to store temporary Data in the Computer Memory
+
                 
-P = 1           (P is a integer type Variable)
+p = 1                              (p is a integer type Variable)
 
-p = 3.2         (p is floating point variable)   
-p= 3.0          (p is floating point varible)
 
-p = 'string'     (p is a string type)
+x = 3.2                           (x is floating point variable)   
+y = 3.0                           (y is floating point varible)
 
-p = True / False (p is boolean Type)
 
-input() --
+z = 'string'                      (z is a string type)
+
+
+b = True / False              (b is boolean Type)
+
+In the above example,
+
+• p is an integer (a whole number without a decimal point)
+
+• x and y are float (a number with a decimal point)
+
+• z is a string (a sequence of characters)
+
+• b is a boolean. Boolean values can be True or False.
+
+ input() --
            Returns a string and use to take a input from the user
+
            tr  =  input('Promt')
+
            tr is string type variable
            
 If we want to convert the tr variable into integer or floating type variable 
-tr = int(tr)    for interger
-tr  = float(tr) for floating point
+
+tr = int(tr)                                           for interger
+
+tr  = float(tr)                                       for floating point 
+
+Comments
+We use comments to add notes to our code. Good comments explain the hows and
+
+whys, not what the code does. That should be reflected in the code itself. Use
+
+comments to add reminders to yourself or other developers, or also explain your
+
+assumptions and the reasons you’ve written code in a certain way.
+
+# This is a comment and it won’t get executed.
+
+# Our comments can be multiple lines.
