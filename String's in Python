@@ -17,8 +17,10 @@ When a string contain's number , it is still a string
 Example:
                 >>>a = "1234"
                 # a is str type datatype
+
 So,
       TO convert number's in a string into a number we use  the built - in function in python
+
       >>>a = "1234"
       >>>a = int(a)
       # a is int type datatype
@@ -77,62 +79,345 @@ IndexError : string index out of range
 String's Have Length              
   The built-in function len gives us the length of a string.        
 
->>>char = 'abc'  
 
+>>>char = 'abc'  
 >>>print(len(char))
 3
 
 len()  Function --
+                             
+            "char" =====> len() ====> 3 
+                                                 
+            Input             function       Length of string.
+           for len                                ,  an interger  
+          function                                                                       
+                               
 
+Looping Through String's 
+ 
+>>>char = "abc"
+>>>for letter in char:
+...          print(letter)
+...
+a
+b
+c
 
+in -- 
+            The iteration variable iterates through the sequence.
+            The body of code is executed once for each value in the sequence.
 
-course = ‘Python for Beginners'
+Slicing String's  --
+We can look at any continous section of a string using a colon operator.
+
+The second number is one beyond the end of the slice - " up to but not including ".
+
+>>>course = 'Python for Beginners'
 
 We can slice a string using a similar notation:
 
-course[1:5]
+>>>print(course[1:5])
+ytho
 
-The above expression returns all the characters starting from the index position of 1
-to 5 (but excluding 5).
- The result will be ytho
+The above expression returns all the characters starting from the index position of 1to 5
+ (but excluding 5).
+
+The result will be ytho
+
 If we leave out the start index, 0 will be assumed.
+
+>>>print(course[ : 5])
+pytho
+
+
 If we leave out the end index, the length of the string will be assumed.
 
-We can use formatted strings to dynamically insert values into our strings:
+>>>print(course[11: ]
+Beginners
+
+
+If the second number is beyond the end of the string , it stop at the end of  string.
+
+>>>print(len(course))
+20
+>>>print(course[11:25]
+Beginners
+
+We can use formatted strings to dynamically insert values into our strings --
 
 >>>name = 'Harshit'
->>>message = f’Hi, my name is {name}’
+>>>message = f "Hi, my name is {name}"
+>>>print(message)
+Hi, my name is Harshit
 
-message.upper() # to convert to uppercase
+We can also insert integer value's into string.
 
-message.lower() # to convert to lowercase
+>>>tr = 123
+>>>sum = f "sum = {tr}"
+>>>print(sum)
+sum = 123
 
-message.title() # to capitalize the first letter of every word
+{} create's a hole in your string's.
 
-message.find(‘p’) # returns the index of the first occurrence of p
 
-(or -1 if not found)
+Using in as a logical operator --
+To check if a string contains a character (or a sequence of characters), we use the in operator.
 
-message.replace(‘p’, ‘q’)
+The in keyword can also be used to check to see if one string is in another string.
 
-To check if a string contains a character (or a sequence of characters), we use the in
-operator:
+The in expression is a logical expression that returns True or False and can be used in an if statement .
 
 >>> course= 'Python for Beginners'
->>>contains= ‘Python’ in course
+>>>contains= 'Python' in course
 >>>print(contains)
 True
 
-String Validators
+>>>tr = "python" in course
+>>>print(tr)
+False
 
-Python has built-in string validation methods for basic data.
-It can check if a string is composed of alphabetical characters, 
-alphanumeric characters, digits, etc.
+String Comparison  --
+We can simply compare string's or we can compare character for character or string's for string.
 
-str.isalnum()
+The uppercase letters are generally less than lowercase letters beacuse of ASCII values .
 
-This method checks if all the characters of a string are alphanumeric
- (a-z, A-Z and 0-9) .
+>>>word == "Hii"
+
+
+>>>if  word == "Hii"
+...         print("yes")
+...   
+yes
+
+
+>>>if word >= "Hii"
+...        print("yes")
+...
+yes
+
+ String Object  --
+                                              String are object's with a string library.
+
+object --   are kind of variables that have capabilities that are kind of  grafted onto or built into them.
+
+The Function or method's specific to string's 
+
+These Functions or method's do not change or modify the original string , instead they return's a new string .
+
+dir() -- It say's what are string's capable of ?
+            It takes  one argument as a input 
+>>>stuff = "abc"
+>>>print(dir(stuff))
+['capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 
+'format', 'format_map', 'index','isalnum', 'isalpha''isascii', 'isdecimal', 'isdigit',
+ 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace',
+'istitle', 'isupper','join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition',
+ 'replace', 'rfind', 'rindex', 'rjust','rpartition', 'rsplit', 'rstrip''split', 
+'splitlines', 'startswith', 'strip', 'swapcase','title', 'translate', 'upper',
+'zfill']
+
+Even the constant string's have this sort of built-in capability .
+
+>>>"hii".upper()
+HII
+
+1) str.upper() --
+                  This method will return a new string with all the letters are converted into upper case.
+
+>>>stuff = "PyThoN"
+>>>new = stuff.upper()
+>>>print(new)
+PYTHON
+>>>print(stuff)
+PyThoN
+
+message.upper()                             # to convert to uppercase
+
+
+2) str.lower() --
+                      This method will return a new string with all  the letter are converted into lower case.
+                                        
+
+
+
+>>>stuff = "PyThoN"
+>>>new = stuff.lower()
+>>>print(new)
+python
+>>>print(stuff)
+PyThoN
+
+message.lower()                                           # to convert to lowercase
+
+
+3) str.title() -- 
+                   This method will return a new string  which  capitalize the first letter of every                                                                                   word
+
+>>>stuff = "PyThoN"
+>>> new = stuff.title()
+>>>print(new)
+Python
+>>>print(stuff)
+PyThoN
+
+
+>>>tr = "hELLO"
+>>>print(tr.title())
+Hello
+
+>>>dr = "{hellO"
+>>>print(dr.title())
+{Hello
+
+message.title()                                 # to capitalize the first letter of every word
+
+
+4) str.capitalize() --
+                                 This method will return a new string  which  capitalize the first letter only of the                                                                              string  and other to lower case.
+
+
+>>>stuff = "PyThoN"
+>>> new = stuff.capitalize()
+>>>print(new)
+Python
+>>>print(stuff)
+PyThoN         
+                                                         
+          
+str.title()                                                                                          str.capitalize()
+
+>>>tr = "pYTHON for everybody                                                                   >>>tr = "pYTHON for everybody
+>>>dr = tr.title()                                                                              >>>dr = tr.capitalize()
+>>>print(dr)                                                                                    >>>print(dr)
+Python For Everybody                                                                            Python for everybody
+
+>>>tr = "{python"
+>>>print(tr.capitalize())
+{python                           
+
+
+# output expected is "{Python"  but capitalize method only capitalize the first letter.
+
+
+
+ 
+
+5) Stripping Whitespaces :
+
+str.strip()                        #remove the whitespaces from Begining and end. 
+
+str.lstrip()                        #remove whitespaces from left or begining.
+
+str.rstrip()                       #remove whitespace from right or end.
+
+
+Sometime we want to take a string and remove whitespace at the begining and / or end.
+
+
+>>>greet = "  Hello   "
+>>>greet.strip()
+'Hello'
+
+  
+
+>>>greet = "  Hello   "
+>>>greet.rstrip()
+'   Hello'
+
+>>>greet = "  Hello   "
+>>>greet.lstrip()
+'Hello   '
+
+We can also pass argument in strip function.
+
+>>>hr = "hi go hi"
+
+>>>print(hr.strip('hi'))
+
+ go
+
+>>>print(hr.lstrip())
+
+ go hi
+
+>>>print(hr.rstrip())
+
+hi go
+
+
+
+6)str.split() --
+
+                      Split a string into a list where each word is a list item. split method returns a list of string .
+
+
+
+
+>>>stuff = "hii how are u"
+>>>new = stuff.split()
+['hii' , 'how' , 'are' , 'u']
+
+We can also pass argument in strip function.
+
+
+>>>tr = "rprpr"
+>>>stuff = tr.split('r')
+>>>print(stuff)
+[' ' , 'p','p', ' ']
+
+>>>print(stuff[0],stuff[1],stuff[3],stuff[2])
+ p p
+
+ --- r p r p r
+     0 1 2 3 4
+
+
+split('r') will strip the tr on baised on 'r'.
+the first letter or tr[0] is 'r' so there will be a whitespace in the list .
+and again r occurs on tr[2] but it will strip it out so there is no 
+whitespace in the list.
+
+
+
+7)join method--
+                          it will convert the list to string
+
+
+
+
+8) str.startswith("p") --
+                          This method checks that string starts with "p" or not .It will return True or False.
+
+                                                            
+>>>stuff = "From the line"
+>>>tr = stuff.startswith("From")
+>>>print(tr)
+True
+
+>>>new = stuff.startswith("from")
+>>>print(new)
+False
+ 
+>>>dr = stuff.startswith("the")
+>>>print(dr)
+False
+        
+
+                                 
+
+9) str.find(‘p’) --
+                               # returns the index of the first occurrence of p(or -1 if not found)
+
+
+10) str.replace(‘p’, ‘q’) --
+
+return a new string with repacement of p to q
+
+                                           
+11) str.isalnum() --
+
+                                       This method checks if all the characters of a string are alphanumeric (a-z, A-Z and 0-9) . 
+
 
 >>> print 'ab123'.isalnum()
 True
@@ -140,10 +425,10 @@ True
 False
 
 
-str.isalpha()
+12) str.isalpha() --
 
-This method checks if all the characters of a string are
- alphabetical (a-z and A-Z) .
+                                       This method checks if all the characters of a string are alphabetical (a-z and A-Z) .
+
 
 >>> print 'abcD'.isalpha()
 True
@@ -151,9 +436,10 @@ True
 False
 
 
-str.isdigit()
+13) str.isdigit() --
 
-This method checks if all the characters of a string are digits (0-9).
+                                       This method checks if all the characters of a string are digits (0-9).
+
 
 >>> print '1234'.isdigit()
 True
@@ -161,10 +447,10 @@ True
 False
 
 
-str.islower()
+14) str.islower() --
 
-This method checks if all the characters of a string are 
-lowercase characters (a-z).
+                                          This method checks if all the characters of a string are lowercase characters (a-z).
+
 
 >>> print 'abcd123#'.islower()
 True
@@ -173,13 +459,18 @@ True
 False
 
 
-str.isupper()
+15) str.isupper() --
 
-This method checks if all the characters of a string are
-uppercase characters (A-Z).
+                                          This method checks if all the characters of a string are uppercase characters(A-Z).
+
 
 >>> print 'ABCD123#'.isupper()
 True
 
 >>> print 'Abcd123#'.isupper()
 False
+
+
+
+
+
